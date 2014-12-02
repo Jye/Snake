@@ -8,8 +8,23 @@ namespace Model
 {
     public class Game
     {
-        public Game (int rows, int columns){
 
+        public Game(int rows, int columns)
+        {
+            Rows = rows;
+            Columns = columns;
+        }
+
+        public int Rows
+        {
+            get;
+            private set;
+        }
+
+        public int Columns
+        {
+            get;
+            private set;
         }
     }
 }

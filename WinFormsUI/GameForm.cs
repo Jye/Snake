@@ -12,7 +12,7 @@ namespace WinFormsUI
 {
     public partial class GameForm : Form
     {
-        Model game;
+        Model.Game game;
         public GameForm()
         {
             InitializeComponent();
