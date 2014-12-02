@@ -12,11 +12,23 @@ namespace WinFormsUI
 {
     public partial class GameForm : Form
     {
+        Model game;
         public GameForm()
         {
             InitializeComponent();
-            var game = new Model.Game(50, 50);
+            game = new Model.Game(50, 50);
+            gamePanel.Paint += gamePanel_Paint;
+        }
 
+        void gamePanel_Paint(object sender, PaintEventArgs e)
+        {
+            for (int x = 0; x < game.Rows; x++)
+            {
+                for (int y = 0; y < game.Columns; y++)
+                {
+
+                }
+            }
         }
     }
 }
